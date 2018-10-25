@@ -59,5 +59,14 @@ class MainCross {
         for (Competitor c : competitors) {
             c.info();
         }
+
+        Human participant = new Human("James");
+        participant.maxRunDistance = 50;
+        Human[] humans = {new Human("Bob"), new Human("Jack"), new Human("Harry"), participant, new Human("Tom")};
+        Team team = new Team("Mission: Impossible", humans);
+        Course course = new Course(barriers);
+        course.doIt(team);
+        team.showResults();
+        team.passDistanceInfo();
     }
 }
