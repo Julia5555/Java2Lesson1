@@ -60,6 +60,7 @@ class MainCross {
             c.info();
         }
 
+
         Human participant = new Human("James");
         participant.maxRunDistance = 50;
         Human[] humans = {new Human("Bob"), new Human("Jack"), new Human("Harry"), participant, new Human("Tom")};
