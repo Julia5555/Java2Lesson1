@@ -9,10 +9,10 @@ public class Course {
     }
 
     public void doIt(Team team) {
-        for (Human human : team.participants) {
+        for (Competitor competitor : team.participants) {
             for (Barrier barrier : this.barriers) {
-                barrier.doIt(human);
-                if (!human.isOnDistance()) {
+                barrier.doIt(competitor);
+                if (!competitor.isOnDistance()) {
                     break;
                 }
             }
