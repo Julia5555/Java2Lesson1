@@ -59,5 +59,11 @@ class MainCross {
         for (Competitor c : competitors) {
             c.info();
         }
+
+        Team team = new Team("Mission: Impossible", competitors);
+        Course course = new Course(barriers);
+        course.doIt(team);
+        team.showResults();
+        team.passDistanceInfo();
     }
 }
