@@ -37,7 +37,6 @@ public class Main {
     }
 
     public static Integer getSumElements(String[][] myArray) throws MyArrayDataException, MySizeArrayException {
-        checkedArrayIsNotNull(myArray);
         Integer sum = 0;
         Integer i = 0;
         Integer j = 0;
@@ -64,6 +63,7 @@ public class Main {
 
         Integer sum = 0;
         try {
+            checkedArrayIsNotNull(matrixB);
             sum = getSumElements(matrixB);
             System.out.println("Сумма элементов массива равна "+ sum);
         } catch (MyArrayDataException e) {
