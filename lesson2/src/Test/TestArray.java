@@ -4,6 +4,7 @@ import WorkWithArray.MySizeArrayException;
 import org.junit.Test;
 
 import static WorkWithArray.Main.checkedArrayIsNotNull;
+import static WorkWithArray.Main.getSumElements;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -79,6 +80,22 @@ public class TestArray {
             checkedArrayIsNotNull(matrix);
         } catch (MyArrayDataException e) {
             assertThat(e.getMessage(),is("Значение элемента массива в позиции 2 должно быть массивом"));
+        }
+    }
+
+    @Test
+    public void testSumElements() throws MySizeArrayException {
+        String[][] matrix = {
+                {"1","4","2","3"},
+                {"1","2","3", "4"},
+                {"1","2","3fr", "4"},
+                {"1","2","3","4"}
+        };
+
+        try {
+            getSumElements(matrix);
+        } catch (MyArrayDataException e) {
+            assertThat(e.getMessage(),is("Значение элемента массива в позиции 2, 2 должно быть числом"));
         }
     }
 }
