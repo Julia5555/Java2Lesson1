@@ -23,7 +23,7 @@ public class ControllerAuth {
         Stage stage = (Stage) textAuth.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("../sample/sample.fxml"));
         Parent root = loader.load();
-        stage.setScene(new Scene(root, 600, 400));
+        stage.setScene(new Scene(root, 600, 300));
         stage.setTitle(text + " chat");
         Controller controller = loader.<Controller>getController();
         controller.setUserNickName(text);

@@ -13,7 +13,7 @@
     <stylesheets>
         <URL value="@/css/Style.css" />
     </stylesheets>
-     <Label prefHeight="38.0" prefWidth="700.0" text="Добро пожаловать в MyChat!">
+     <Label prefHeight="28.0" prefWidth="700.0" text="Введите ник: ">
     <VBox.margin>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </VBox.margin></Label>
