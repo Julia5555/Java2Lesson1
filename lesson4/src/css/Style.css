@@ -1,0 +1,28 @@
+.textField{
+    -fx-padding: 15px;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #2a4d4f;
+    -fx-border-width: 2;
+
+    -fx-background-radius: 0;
+
+    -fx-background-color: #5f8274;
+
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #bbbbaf;
+    -fx-min-height: 10px;
+}
+
+.button:hover{
+    -fx-background-color: #60825a;
+}
+
+.button:pressed
+{
+    -fx-background-color: #75827a;
+    -fx-text-fill: #bbbbaf;
+}
