@@ -43,7 +43,7 @@ public class ClientHandler {
                     while (true) {
                         new Thread(() ->{
                             try {
-                                Thread.sleep(12000);
+                                Thread.sleep(120000);
                                 if(!this.isAuth) {
                                     System.out.println("unsubscribe client");
                                     server.unsubscribe(this);

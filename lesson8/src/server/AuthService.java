@@ -9,7 +9,7 @@ public class AuthService {
     public static void connect() {
         try {
             Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:mainDB.db");
+            connection = DriverManager.getConnection("/home/redheat/test_projects/Java2Lesson1/lesson8/src/mainDB.db");
             stmt = connection.createStatement();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
